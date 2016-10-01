@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en" class="page  page--home">
+
+  <head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0">
+
+<title>Home &ndash; CSS Wizardry &ndash; CSS, OOCSS, front-end architecture, performance and more, by Harry Roberts</title>
+
+<!-- Prefetch DNS for external assets (Twitter widgets etc). -->
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//themes.googleusercontent.com">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,600italic,600,300">
+<link rel="stylesheet" href="/css/csswizardry.min.css">
+
+<link rel="dns-prefetch" href="//cdn.adpacks.com">
+<link rel="dns-prefetch" href="//s3.buysellads.com">
+<link rel="dns-prefetch" href="//platform.twitter.com">
+<link rel="dns-prefetch" href="//www.google-analytics.com">
+<link rel="dns-prefetch" href="//platform.twitter.com">
+<link rel="dns-prefetch" href="//s3.buysellads.com">
+<link rel="dns-prefetch" href="//stats.buysellads.com">
+<link rel="dns-prefetch" href="https://twitter.com">
+<link rel="dns-prefetch" href="https://cdn.syndication.twimg.com">
+
+<!-- Prerender work page -->
+<link rel="prerender" href="http://csswizardry.com/work/">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@csswizardry">
+<meta name="twitter:domain" content="csswizardry.com">
+<meta name="twitter:creator" content="@csswizardry">
+<meta name="twitter:title" content="Home – CSS Wizardry">
+<meta name="twitter:image:src" content="/logo.png">
+
+
+<link rel="alternate" type="application/atom+xml" href="http://feeds.feedburner.com/csswizardrycom">
+
+<link rel="shortcut icon" href="/icon.png">
+<link rel="apple-touch-icon-precomposed" href="/icon.png">
+<meta name="apple-mobile-web-app-title" content="csswizardry">
+<meta name="description" content="Articles on CSS, OOCSS, front-end architecture, scalability and performance.">
+<link rel="canonical" href="http://csswizardry.com/">
+
+</head>
+
+
+<body>
+
+    <header class="page-head  page-head--masthead">
+
+    <div class="wrapper">
+
+        <nav class="site-nav">
+
+    <a href="/" class="site-nav__home">
+        <svg class="site-nav__logo" width="64" height="64" xmlns="http://www.w3.org/2000/svg"><path d="M52.3 64L40.6 64C40.9 63.9 41.2 63.7 41.4 63.6 42 63.2 42.6 62.7 43.3 61.8L43.7 64 46.1 64 46.1 54.7 38.9 54.7 38.9 57.6 42.9 57.6C42.7 58.7 42.2 59.7 41.4 60.4 40.6 61.1 39.7 61.4 38.4 61.4 37.2 61.4 36.1 61 35.1 60.1 34.2 59.2 33.7 57.7 33.7 55.6 33.7 53.5 34.1 51.9 35 50.8 35.9 49.8 37.1 49.3 38.5 49.3 39.2 49.3 39.8 49.4 40.4 49.6 41.5 50.1 42.2 50.9 42.4 52.1L46 52.1C45.8 50.5 45 49.1 43.7 48 42.4 46.8 40.6 46.3 38.4 46.3 35.9 46.3 33.8 47.1 32.3 48.8 30.8 50.5 30 52.7 30 55.5 30 58.3 30.8 60.5 32.3 62.1 33.1 63 34.1 63.6 35.1 64L25.9 64C27.2 63.6 28.2 62.8 28.9 61.6 29.4 60.6 29.7 59.2 29.7 57.3L29.7 46.7 26 46.7 26 57.3C26 58.5 25.9 59.4 25.6 59.9 25.2 60.9 24.2 61.4 22.8 61.4 21.3 61.4 20.4 60.9 19.9 59.9 19.6 59.4 19.5 58.5 19.5 57.3L19.5 46.7 15.8 46.7 15.8 57.3C15.8 59.2 16.1 60.6 16.7 61.6 17.3 62.8 18.3 63.6 19.7 64L6 64C4.3 64 1.7 64 0 64L1.5 64 3.4 64 3.4 56.3 10.1 56.3 10.1 64 13.7 64 13.7 46.7 10.1 46.7 10.1 53.3 3.4 53.3 3.4 46.7 0 46.7 0 3C0 1.3 1.3 0 3 0L61 0C62.7 0 64 1.3 64 3L64 61C64 62.7 62.7 64 61 64L58.7 64C59.6 63.7 60.5 63.2 61.1 62.5 62.9 60.8 63.7 58.4 63.7 55.3 63.7 52.2 62.9 49.8 61.1 48.2 59.8 46.9 57.9 46.2 55.5 46.2 53 46.2 51.1 46.9 49.8 48.2 48.1 49.8 47.2 52.2 47.2 55.3 47.2 58.4 48.1 60.8 49.8 62.5 50.5 63.2 51.3 63.7 52.3 64Z M59.1 59.6C59.9 58.5 60.4 57 60.4 55.1 60.4 53.1 59.9 51.6 59.1 50.6 58.3 49.5 57.1 49 55.7 49 54.3 49 53.1 49.5 52.3 50.6 51.4 51.6 51 53.1 51 55.1 51 57 51.4 58.5 52.3 59.6 53.1 60.6 54.3 61.2 55.7 61.2 57.1 61.2 58.3 60.6 59.1 59.6L59.1 59.6Z" fill="#f43059" class="site-nav__logo-fill"/></svg>
+    </a>
+
+    <ul class="site-nav__list">
+        <li class="site-nav__item"><a href="/about/" class="site-nav__link  site-nav__about">About<span class="hide-palm"> and Contact</span></a></li>
+        <li class="site-nav__item"><a href="/case-studies/" class="site-nav__link  site-nav__case-studies">Case Studies</a></li>
+        <li class="site-nav__item"><a href="/speaking/" class="site-nav__link  site-nav__speaking">Speaking</a></li>
+        <li class="site-nav__item"><a href="http://csswizardry.com/work/" class="site-nav__link  site-nav__hire-me">Hire Me</a></li>
+    </ul>
+
+</nav>
+
+
+        <h1 class="page-head__text">When windows are really clean, they bring the outside in.</h1>
+
+    </div>
+
+</header>
+
+
+<div class="wrapper">
+
+    <!--
+  - Jump straight back out of wrapper mode on the home page.
+  -->
+
+</div><!-- /wrapper -->
+
+<section class="[ band  band--highlight ]  promo">
+
+    <div class="wrapper  wrapper--wide">
+
+        <ul class="layout">
+
+            <li class="layout__item  desk-one-third">
+
+                <div class="media  promo__block">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="32" height="32" data-icon="signpost" viewBox="0 0 32 32" class="injected-svg media__img  iconic" data-src="/img/icons/signpost-md.svg">
+                      <path d="M14 0v2h-12l-2 3 2 3h12v24h3v-21h12l2-3-2-3h-12v-5h-3z"></path>
+                    </svg>
+                    <div class="media__body">
+                        <h2 class="heading">Consultancy</h2>
+                        <p>I provide CSS and performance consultancy to companies of all sizes across the globe. From advice on how to work better as a team, to how to scale a large codebase; how to rationalise the design process, to how to write better quality responsive UIs.</p>
+                    </div>
+                </div>
+
+            <li class="layout__item  lap-and-up-one-half  desk-one-third">
+
+                <div class="media  promo__block">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="32" height="32" data-icon="cogs" viewBox="0 0 32 32" class="injected-svg media__img  iconic" data-src="/img/icons/cogs-md.svg">
+                      <path d="M7.719 0l-2.5 1.063.188 2.844c-.569.442-1.068.943-1.5 1.5l-2.875-.188-1.031 2.531 2.156 1.875c-.088.699-.09 1.41 0 2.125l-2.156 1.906 1.063 2.5 2.844-.188c.442.569.943 1.068 1.5 1.5l-.188 2.875 2.531 1.031 1.875-2.156c.7.088 1.41.09 2.125 0l1.906 2.156 2.5-1.063-.188-2.844c.569-.442 1.068-.943 1.5-1.5l2.875.188 1.031-2.531-2.156-1.875c.088-.7.09-1.41 0-2.125l2.156-1.906-1.063-2.5-2.844.188c-.442-.569-.943-1.068-1.5-1.5l.188-2.875-2.531-1.031-1.875 2.156c-.7-.088-1.41-.09-2.125 0l-1.906-2.156zm3 5.875c1.875.014 3.643 1.128 4.406 2.969 1.017 2.455-.138 5.264-2.594 6.281-2.456 1.017-5.264-.139-6.281-2.594-1.017-2.456.138-5.264 2.594-6.281.614-.254 1.25-.38 1.875-.375zm12.281 10.125l-.656 1.969c-.505.139-.992.34-1.438.594l-1.875-.906-1.406 1.406.938 1.844c-.254.446-.456.931-.594 1.438l-1.969.656v2l1.969.656c.139.505.34.992.594 1.438l-.906 1.875 1.406 1.406 1.844-.938c.446.254.931.456 1.438.594l.688 1.969h1.969l.656-1.969c.505-.139.992-.34 1.438-.594l1.875.906 1.406-1.406-.938-1.844c.254-.446.456-.931.594-1.438l1.969-.688v-1.969l-1.969-.656c-.139-.505-.34-.992-.594-1.438l.906-1.875-1.406-1.406-1.844.938c-.446-.254-.931-.456-1.438-.594l-.688-1.969h-1.969zm1 4.5c1.933 0 3.5 1.567 3.5 3.5s-1.567 3.5-3.5 3.5-3.5-1.567-3.5-3.5 1.567-3.5 3.5-3.5z"></path>
+                    </svg>
+                    <div class="media__body">
+                        <h2 class="heading">Development</h2>
+                        <p>I work on products and long-running projects, focusing on scalability, maintainability, performance, and more. I usually join product teams for short, initial kick-off sprints in order to set up architectures and workflows, and to leave teams self sufficient.</p>
+                    </div>
+                </div>
+
+            <li class="layout__item  lap-and-up-one-half  desk-one-third">
+
+                <div class="media  promo__block">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="32" height="32" data-icon="tools" viewBox="0 0 32 32" class="injected-svg media__img  iconic" data-src="/img/icons/tools-md.svg">
+                      <path d="M1 0l-1 1 2 3 2 1 14 14-1 1 1 1v1l9 9c.52.613 1.289 1 2.156 1 1.566 0 2.844-1.278 2.844-2.844 0-.867-.387-1.636-1-2.156l-9-9h-1l-1-1-1 1-14-14-1-2-3-2zm16 0c7 3.031 4.984 6.016 4 7l-5.344 5.344-.156.156 2 2 .156-.156 5.344-5.344c.984-.984 1.969-1.031 3 0s0 1 1 2l1 1 4-4-1-1c-1-1-1 0-2-1s0-1-1-2l-1-1c-2.625-2.625-3.717-2.959-7.969-3h-2.031zm-5.5 14.5l-11.156 11.156c-.195.195-.248.534-.125.781l2.563 5.125c.123.247.347.26.5.031l1.469-2.188c.153-.23.43-.586.625-.781l10.125-10.125-4-4z"></path>
+                    </svg>
+                    <div class="media__body">
+                        <h2 class="heading">Workshops</h2>
+                        <p>I run workshops and training sessions for existing teams, getting them up to scratch and prepared for writing and managing front-ends that they expect to grow. Performance concerns, workflows, design process, and more, tailored to your company, products, and team.</p>
+                    </div>
+                </div>
+
+            <li class="layout__item">
+                <p class="promo__links">
+                    <a href="http://csswizardry.com/work/" class="btn  btn--secondary">Learn more</a> <span class="promo__links-spacer">or</span> <a href="mailto:harry@csswizardry.com?subject=Let%E2%80%99s%20work%20together" class="btn">Hire me</a>
+                </p>
+
+        </ul>
+
+    </div>
+
+</section>
+
+<section class="band  band--dark" id="section:clients" data-ui-component="Clients">
+
+    <div class="wrapper">
+
+        <ul class="client-list">
+
+            <li class="client-list__item">
+                <a href="https://www.google.com/"><img src="/img/content/clients/google.png" class="client-list__logo" alt="" title="Google" /></a>
+            </li>
+
+            <li class="client-list__item">
+                <a href="https://www.etsy.com/"> <img src="/img/content/clients/etsy.png" class="client-list__logo" alt="" title="Etsy" /> </a>
+            </li>
+
+            <li class="client-list__item">
+                <a href="http://www.un.org/"> <img src="/img/content/clients/un.png" class="client-list__logo" alt="" title="United Nations" /> </a>
+            </li>
+
+            <li class="client-list__item">
+                <a href="http://www.ft.com/"> <img src="/img/content/clients/ft.png" class="client-list__logo" alt="" title="Financial Times" /> </a>
+            </li>
+
+            <li class="client-list__item">
+                <a href="http://www.nhs.uk/"> <img src="/img/content/clients/nhs.png" class="client-list__logo" alt="" title="NHS" /> </a>
+            </li>
+
+            <li class="client-list__item">
+                <a href="http://www.unilever.com/"> <img src="/img/content/clients/unilever.png" class="client-list__logo" alt="" title="Unilever" /> </a>
+            </li>
+
+            <li class="client-list__item">
+                <a href="http://www.sky.com/"> <img src="/img/content/clients/sky.png" class="client-list__logo" alt="" title="BSkyB" /> </a>
+            </li>
+
+            <li class="client-list__item">
+                <a href="http://www.bbc.co.uk/"> <img src="/img/content/clients/bbc.png" class="client-list__logo" alt="" title="BBC" /> </a>
+            </li>
+
+            <li class="client-list__item">
+                <a href="http://www2.deloitte.com/"> <img src="/img/content/clients/deloitte.png" class="client-list__logo" alt="" title="Deloitte" /> </a>
+            </li>
+
+            <li class="client-list__item">
+                <a href="http://www.booking.com/"> <img src="/img/content/clients/booking.com.png" class="client-list__logo" alt="" title="Booking.com" /> </a>
+            </li>
+
+            <li class="client-list__item">
+                <a href="https://www.kickstarter.com/"> <img src="/img/content/clients/kickstarter.png" class="client-list__logo" alt="" title="Kickstarter" /> </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</section>
+
+<section class="[ band  band--large  band--tint ]  mb" data-ui-component="Quotes carousel">
+
+    <div class="carousel">
+
+        <ul class="carousel__panes">
+
+            <li class="carousel__pane">
+                <blockquote class="pull-quote  pull-quote--banner">
+                    <p>Harry helped our team level up their scalable CSS architecture skills, and to say that he had a large impact on our work is an understatement. We can’t recommend him enough.</p>
+                    <b class="pull-quote__source"><a href="https://twitter.com/addyosmani">Addy Osmani</a>, Google</b>
+                </blockquote>
+            </li>
+
+            <li class="carousel__pane">
+                <blockquote class="pull-quote  pull-quote--banner">
+                    <p>The CSS architecture I learned from Harry on <a href="/case-studies/nhs-nhsx-elearning-platform/" class="carousel__link">the NHS project</a> has changed the way I work. Bravo!</p>
+                    <b class="pull-quote__source"><a href="https://twitter.com/joshnesbitt">Josh Nesbitt</a></b>
+                </blockquote>
+            </li>
+
+            <li class="carousel__pane">
+                <blockquote class="pull-quote  pull-quote--banner">
+                    <p>I learned more about CSS architecture in my three-day workshop with Harry than I did in the 10 years before.</p>
+                    <b class="pull-quote__source"><a href="https://twitter.com/opus131">Markus Klug</a></b>
+                </blockquote>
+            </li>
+
+            <li class="carousel__pane">
+                <blockquote class="pull-quote  pull-quote--banner">
+                    <p>We had a very tight deadline and—with Harry’s direction—development
+                    has gone significantly more smoothly than it would have.</p>
+                    <b class="pull-quote__source"><a href="https://twitter.com/matt5409">Matt Saunders</a></b>
+                </blockquote>
+            </li>
+
+            <li class="carousel__pane">
+                <blockquote class="pull-quote  pull-quote--banner">
+                    <p>Harry provided lots of <a href="/case-studies/madgex-consultancy-workshop/" class="carousel__link">valuable insights</a>, suggestions, and support, all tailored specifically to our products.</p>
+                    <b class="pull-quote__source"><a href="http://www.madgex.com/">Nik White</a></b>
+                </blockquote>
+            </li>
+
+        </ul>
+
+    </div>
+
+</section>
+
+<div class="wrapper">
+
+<div class="layout  layout--large">
+    <div class="layout__item  lap-and-up-one-half  desk-two-thirds" data-ui-component="Main content">
+
+        <section class="post" id="section:articles">
+
+            <h3 class="heading">Articles</h3>
+
+            <ul class="list-ui  post__list  mb">
+                
+            </ul>
+
+        </section>
+
+        <ol class="layout" data-ui-component="Pagination">
+
+            <li class="layout__item  lap-and-up-one-half  mb">
+                
+
+                
+
+        </ol>
+
+    </div
+
+   ><div class="layout__item  lap-and-up-one-half  desk-one-third" data-ui-component="Sub content">
+
+        <div class="[ box  box--highlight ]  mb">
+            <p>Hi there, I’m Harry. I am an <a href="https://thenetawards.com/previous-winners/">award-winning</a> <b>Consultant Front-end Architect</b>, <b>designer</b>, <b>developer</b>, <b>writer</b> and <b>speaker</b> from the UK. I <a href="/archive/">write</a>, <a href="http://twitter.com/csswizardry">tweet</a>, <a href="/speaking/">speak</a> and <a href="http://github.com/csswizardry">share code</a> about authoring and scaling CSS for big websites. You can <a href="mailto:harry@csswizardry.com?subject=Let%E2%80%99s%20work%20together">hire me</a>.</p>
+
+<p><a href="https://twitter.com/csswizardry" class="twitter-follow-button" data-show-count="true" data-lang="en">Follow @csswizardry</a></p>
+
+<hr />
+
+<p class="text-banner">
+    <a href="/work/" class="btn  btn--full  btn--positive">I am currently <strong>accepting new projects</strong> for Q3–4, 2015</a>
+    <small><a href="/2014/08/csswizardry-referral-scheme/" class="link-secret">Referral scheme</a></small>
+</p>
+
+<article class="[ box  box--highlight ]  mb" data-ui-component="ad">
+    <div class="adpacks">
+    <script src="//cdn.adpacks.com/adpacks.js?legacyid=1255689&zoneid=1386&key=2ef959fa3a5535d37060575e733650a1&serve=C6SI42Y&placement=csswizardrycom&circle=dev" async id="_adpacks_js"></script>
+</div>
+
+</article>
+
+<h4>Projects</h4>
+
+<ul class="[ list-ui  list-ui--small ]  mb">
+    <li><a href="http://inuitcss.com/"><img src="/img/content/logo-inuitcss.png" alt="inuitcss" /></a></li>
+    <li><a href="http://itcss.io/">ITCSS</a> – coming soon…</li>
+    <li><a href="http://cssguidelin.es/"><img src="/img/content/logo-css-guidelines.png" alt="CSS Guidelines" /></a></li>
+</ul>
+
+<h4>Events</h4>
+
+<ul class="list-ui  list-ui--small">
+
+    <li>
+        <h3 class="list-ui__title">Talk</h3>
+        <a href="http://lanyrd.com/2015/smashingconf-freiburg/">SmashingConf</a>, Frieburg (Germany), September 2015
+    </li>
+
+</ul>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+</div>
+
+<section class="[ band  band--tint ]  page-foot">
+
+    <div class="wrapper">
+
+        <div class="layout  layout--middle">
+            <div class="layout__item  lap-and-up-one-quarter">
+                <p>I am available for hire to consult, advise, and develop with passionate product teams across the globe.</p>
+            </div
+           ><div class="layout__item  lap-and-up-one-quarter">
+                <p>I specialise in large, product-based projects where performance and CSS scalability and maintainability are paramount.</p>
+            </div
+           ><div class="layout__item  lap-and-up-one-half">
+               <p><a href="http://csswizardry.com/work/" class="btn  btn--secondary  btn--full">I am currently <strong>considering new projects</strong> for Q3–4, 2015.</a></p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="page-micro">
+
+    <p class="wrapper">
+        <small class="page-micro__copy"><b>CSS Wizardry Ltd</b> is a company registered in England and Wales. <b>Company No.</b> 08698093, <b>VAT No.</b> 170659396</small>
+    </p>
+
+</footer>
+
+
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<script>
+    
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1856861-4']);
+    _gaq.push(['_trackPageview']);
+    
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    
+</script>
+
+</body>
+</html>

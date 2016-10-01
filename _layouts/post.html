@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+{% include header.html %}
+
+<div class="wrapper">
+
+    <div class="layout">
+        <section class="layout__item  desk-three-fifths  post" data-ui-component="Main content">
+
+            <time class="post__date" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%-d %B, %Y" }}</time>
+
+            <h1>{{ page.title }}</h1>
+
+            {{ content }}
+
+            {% if page.hide-hire-me-link != true %}
+
+                <hr />
+
+                <p>
+                    <a href="http://csswizardry.com/work/" class="btn  btn--full">Did you enjoy this? <strong>Hire me!</strong></a>
+                </p>
+            {% endif %}
+
+        </section
+       ><section class="layout__item  desk-three-tenths  desk-push-one-tenth" data-ui-component="Sub content">
+
+            {% include sub-content.html %}
+
+        </section>
+
+    </div>
+
+</div>
+
+{% include footer.html %}
